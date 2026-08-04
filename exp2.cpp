@@ -31,8 +31,13 @@ class student{
 
 int main(){
 
-    student s;
-    s.inputDetails();
-    s.displayDetails();
+   
+     student s1;
+    s1.inputDetails();
+    s1.displayDetails();
+
+     student s2;
+    s2.inputDetails();
+    s2.displayDetails();
     return 0;
 }
