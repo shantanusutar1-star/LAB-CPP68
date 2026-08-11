@@ -9,8 +9,11 @@ class Complex{
     public:
         Complex(int r=0,int i=0):real(r),imag(i){}
         
-        Complex add(const Complex &c){
-            return Complex(real+c.real,imag+c.imag);
+        Complex add(Complex x1,Complex x2){
+            Complex x3;
+            x3.real = x1.real + x2.real;
+            x3.imag = x1.imag + x2.imag;
+            return x3;
         }
 
         Complex subtract(const Complex &c){
@@ -24,7 +27,7 @@ class Complex{
 
 int main(){
     Complex c1(4,5),c2(8,9);
-    Complex sum=c1.add(c2);
+    Complex sum=c1.add(c1,c2);
     Complex diff=c1.subtract(c2);
 
     cout<<"First Complex Number: ";c1.display();
